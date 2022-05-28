@@ -1,13 +1,16 @@
 "use strict"; /* permet notamment de voir certaines erreurs masquées */
 let editableImg = document.getElementById('editable-img');
+
+
 let rotateLeftBtn = document.getElementById('rotate-left-btn');
 
 
 let xPosition = 0; /* xPosition représente le décalage horizontal */
 
-
-
 let moveLeftBtn = document.getElementById('move-left-btn');
+
+
+editableImg.style.position = 'relative';
 
 
 
@@ -21,7 +24,8 @@ const rotateLeft = () => {
 /***** Déclaration de la fonction *****/ 
 const moveLeft = () => { 
     xPosition -= 5;  /* décalage vers la gauche de 5px */   
-    editableImg.style.transform = `translateX(${xPosition}px)`;
+    editableImg.style.left = `${xPosition}`;    
+    console.log(xPosition);
 }
 
 
