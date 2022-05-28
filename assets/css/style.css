@@ -1,0 +1,65 @@
+/***********************************************************************/
+/*** propriétés de reset (en cas d'absence du fichiers normalize.css ***/
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+}
+/***********************************************************************/
+
+/********************* principaux conteneurs ***************************/
+header  
+{    
+    margin-bottom: 20vh;
+    text-align: center;
+}
+main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    height: 70vh;
+    margin: auto;
+    border: 1px solid black;
+}
+.box-image
+{
+    display: grid;
+    place-content: center;
+    max-width: 60vh; /* Même unité (vh) pour garantir une forme carrée */
+    height: 60vh;    /* mettre en vw pour mode mobile portrait */
+    border: 1px solid red;
+    background-color: black;
+}
+
+/***************************** image ********************************/
+#editable-img
+{
+    width: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    transition-duration: 2s;
+    /*
+    transition-duration, permet de 
+    gérer la durée de la transformation */ 
+}
+
+.rotateLeft
+{
+    transform: rotate(-90deg);       
+}
+
+
+
+/************************ icones *****************************/
+i
+{
+    font-size: 2rem;
+    cursor: pointer;
+}
