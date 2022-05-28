@@ -24,7 +24,7 @@ const rotateLeft = () => {
 /***** Déclaration de la fonction *****/ 
 const moveLeft = () => { 
     xPosition -= 5;  /* décalage vers la gauche de 5px */   
-    editableImg.style.left = `${xPosition}`;    
+    editableImg.style.left = `${xPosition}px`; 
     console.log(xPosition);
 }
 
