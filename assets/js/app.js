@@ -31,7 +31,7 @@ moveLeftBtn.addEventListener('click', () => {
 })
 
 
-/********* Exécution de la fonction ***************/
+/******************** Exécution de la fonction *************************/
 rotateLeftBtn.addEventListener('click', () => {
    rotateLeft(); 
 })
