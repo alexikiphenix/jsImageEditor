@@ -20,11 +20,12 @@ const rotateLeft = () => {
 
 /***** Déclaration de la fonction *****/ 
 const moveLeft = () => { 
-    xPosition += 5;     
-    editableImg.style.transform = `translateX(-${xPosition}px)`;     
-    /* rappel toggle permet d'ajouter/retirer une classe */
+    xPosition -= 5;  /* décalage vers la gauche de 5px */   
+    editableImg.style.transform = `translateX(${xPosition}px)`;
 }
 
+
+/********* Ajout d'un écouteur et exécution de la fonction ***************/
 moveLeftBtn.addEventListener('click', () => {
     moveLeft();
 })
