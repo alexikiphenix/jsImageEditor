@@ -41,8 +41,10 @@ main
 /***************************** image ********************************/
 #editable-img
 {    
+    position: relative;
     width: 100%;
     max-width: 100%;
+    left: -50px;
     object-fit: contain;
     transition-duration: 2s;
     /*
